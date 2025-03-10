@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="assets/ccs/style.css">
+    <link rel="stylesheet" href="assets/ccs/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/didot-2" rel="stylesheet">
+
+</head>
+
+<body>
+
+     <!-- Header -->
+     <div class="header">
+        <div class="site-identity">
+            <img src="assets/images/My logo.jpg" alt="My Logo image">
+             <h4 class="Pespesano">John Rhanier Pespesano</h4>
+        </div>
+        <div class="menu-container"> 
+             <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#works">Works</a></li>
+                <li class="menu-btn"><a href="#">Hire Me</a></li>  
+            </ul>
+        </div> 
+
+        <div class="my-menu-btn">
+            <img src="assets/images/my.png" alt="" onclick="toggleMenu()">
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container-mobile"> 
+        <img class="close-btn" src="assets/images/close.png" alt="" onclick="toggleMenu()">
+        <ul class="nav-menu-mobile">
+           <li><a href="#">Home</a></li>
+           <li><a href="#about">About</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#works">Works</a></li>
+           <li class="menu-btn"><a href="#">Hire Me</a></li>  
+       </ul>
+   </div> 
+
+     <!-- Crushy / Banner -->
+    <div id="main-div" class="Crushy">
+       <div style="position: relative;">
+           <img src="assets/images/Crushy.jpg" alt="Crushy image">
+       </div> 
+       <div class="Crushy-heading">
+           <h1 class="Pespesano">John Rhanier Pespesano</h1>
+           <p class="sub-size">1st Year College In Pateros Technological College</p>
+           <div class="Crushy-Button"> 
+              <Button style="margin-right: 10px;">Resume</Button>
+             <button>Contact</button>
+           </div>
+           <p class="my-text">Course: Certificate Of Cumputer Science</p>
+       </div>
+
+    </div>
+    <div class="crushy-2" id="about">
+        <div style="position: relative;">
+            <img src="assets/images/image 1.jpg" alt="img 1">
+        </div>
+        <div class="crushy-2-heading">
+            <h1 class="rhanier">John Rhanier Pespesano</h1>
+        </div> 
+
+    </div> 
+    <div class="Crush" id="projects">
+         <div style="position: relative;">
+            <img src="assets/images/Crushy 1.jpg" alt="Crushy 1">
+         </div>
+         <div>
+     </div>
+   
+    </div> 
+    <div class="awet" id="works">
+        <div style="position: relative;">
+           <img src="assets/images/My Pic.jpg" alt="My Pic">
+        </div>
+        <div>
+    </div>
+    <script>
+        function toggleMenu(){
+            document.querySelector(".menu-container-mobile").classList.toggle("active")
+        }
+    </script>
+</body>
+
+
+</html>
+
